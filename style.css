@@ -6,13 +6,26 @@ Version: 1.0
 */
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;}
-body {background: url(images/backTile4.jpg);text-align: right;font: 12px tahoma;color: #000000;line-height: 1.5;}
+body {background: url(images/backTile4.jpg);text-align: left;font: 13px yekan;color: #000000;line-height: 1.5;}
 .h1,h1{font-size:25px}
-.h2,h2{font-size:19px}
-.h3,h3{font-size:17px}
+.h2,h2{font-size:20px}
+.h3,h3{font-size:28px}
 .h4,h4{font-size:16px}
 .h5,h5{font-size:14px}
 .h6,h6{font-size:12px}
+@font-face {
+font-family: 'BYagut';
+src: url('fonts/BYagut.eot?#') format('eot'),
+url('fonts/BYagut.ttf') format('truetype'),
+url('fonts/BYagut.woff') format('woff');
+}
+@font-face {
+font-family: 'BZar';
+src: url('fonts/BZar.eot?#') format('eot'),
+url('fonts/BZar.ttf') format('truetype'),
+url('fonts/BZar.woff') format('woff');
+}
+@font-face{font-family:'yekan';src:url(fonts/web_Yekan.woff);src:url(fonts/web_Yekan.eot?#iefix) format("embedded-opentype"),url(fonts/web_Yekan.woff) format("woff"),url(fonts/web_Yekan.ttf) format("truetype"),url(fonts/web_Yekan.svg#BYekan) format("svg");font-weight:normal;font-style:normal}
 a {
 color: #333;text-decoration: none;
 }
@@ -20,7 +33,7 @@ a:hover, a:active, a:focus {
     color: #23527c;
     text-decoration: none;
 }
-h1, h2, h3, h4, h5 {font-family: tahoma;font-weight: normal;color: #333;margin-bottom: 10px;}
+h1, h2, h3, h4, h5 {font-family: yekan;font-weight: normal;color: #333;margin-bottom: 10px;}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-family: inherit;
     font-weight: 500;
@@ -139,7 +152,7 @@ p {
 line-height: 1.8em;
 text-align: justify;
 margin-bottom: 10px;
-direction: rtl;
+direction: ltr;
 }
 input {
     border-radius: 2px;
@@ -275,9 +288,9 @@ nav.navbar.navbar-default {
 }
 @media (min-width: 768px){
 .navbar-nav>li {
-    float: right;
+    float: left;
     background-color: #e6e6e6;
-    margin-left: 10px;
+    margin-right: 10px;
     border-radius: 2px;
 }
 .navbar-nav>li>a {
@@ -285,12 +298,12 @@ nav.navbar.navbar-default {
     padding-bottom: 12px;
 }
 .navbar-collapse {
-    padding-right: 0px;
-    padding-left: 15px;
+    padding-left: 0px;
+    padding-right: 15px;
 }
 .container-fluid {
-    padding-right: 0px;
-    padding-left: 15px;
+    padding-left: 0px;
+    padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -313,8 +326,8 @@ ul.top-nav {
 
 
 #custom-search-input {
-    margin: 0px 0px 5px 0px;
-    padding: 0;
+        margin:0;
+        padding: 0;
     }
  
     #custom-search-input .search-query {
@@ -326,7 +339,7 @@ ul.top-nav {
         border-radius: 3px;
 		font-size: 13px;
 		height: 30px;
-		left: -15px;
+		right: -15px;
     }
  
     #custom-search-input button {
@@ -335,7 +348,7 @@ ul.top-nav {
     padding: 2px 5px;
     margin-top: 2px;
     position: relative;
-    right: -13px;
+    left: -13px;
     margin-bottom: 0;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -347,12 +360,12 @@ ul.top-nav {
         z-index: 3;   
     }
 .dis-l-b {
-    float: right;
+    float: left;
     padding: 7px 10px 1px 10px;
     margin: 0px;
 }
 .dis-l-b2 {
-    float: left;
+    float: right;
     padding: 7px 10px 1px 10px;
     margin: 0px;
 }
@@ -391,7 +404,7 @@ ul.top-nav {
     background-color: #fff;
     border: 1px solid #c2c2c2;
     border-top: 2px solid #f0413e;
-    border-radius: 5px 0px 5px 5px;
+    border-radius: 0px 5px 5px 5px;
 }
 .panel {
     background: none;
@@ -497,7 +510,7 @@ ul.top-nav {
     height: 200px; 
 }
 .bs-flipper h3 {
-    font-size: 12px;
+    font-size: 14px;
     margin-right: 4px;
 }
 .bs-flipper h2 {
@@ -542,7 +555,7 @@ ul.top-nav {
     padding: 5px 4px 0px 4px;
 }
 .news-box-title {
-    font-size: 13px;
+    font-size: 17px;
     font-weight: bold;
     padding-top: 13px;
     padding-bottom: 10px;
@@ -553,7 +566,6 @@ ul.top-nav {
 }
 h2.htitle {
     margin: 0px;
-    font-size: 15px;
 }
 h1.htitle {
     font-size: 18px;
@@ -745,7 +757,7 @@ h1.htitle a {
     line-height: 28px;
     cursor: pointer;
     background: #f0413e;
-    font-family: tahoma;
+    font-family: yekan;
     color: #fff;
     border: 1px solid #d40202;
     font-size: 18px;
@@ -818,7 +830,7 @@ nav.woocommerce-MyAccount-navigation {
     clear: both;
 }
 .woocommerce-MyAccount-navigation li {
-    float: right;
+    float: left;
     margin: 5px 5px 20px 5px;
     padding: 5px 10px;
     background: #f0413e;
@@ -872,19 +884,20 @@ margin-bottom: 10px;
     margin-top: 7px;
     color: #2f2f2f;
     border-right: 3px solid #f0413e;
-    text-align: right;
+    text-align: left;
     float: right;
     width: 87%;
     height: 25px;
     line-height: 23px;
     background: #e4e4e4;
-    direction: rtl;
-    padding: 3px 12px 3px 3px;
+    direction: ltr;
+    padding: 3px 3px 3px 12px;
     text-decoration: none;
     transition: All 1s ease-out;
     -webkit-transition: All 0.3s ease-out;
     -moz-transition: All 0.3s ease-out;
     -o-transition: All 0.3s ease-out;
+    font-size: 11px;
 }
 .tawcvs-swatches .swatch {
     opacity: 1;
@@ -895,33 +908,4 @@ margin-bottom: 10px;
 .open>.dropdown-menu {
     display: block;
     background: #e6e6e6;
-}
-.product_meta span.sku_wrapper {
-    display: none;
-}
-.woocommerce div.product form.cart .variations {
-    display: none;
-}
-.slick-list {
-    direction: ltr;
-}
-a.wpis-popup {
-    text-indent: 9999px;
-}
-.slick-next {
-    right: -25px;
-}
-.slick-prev {
-    left: -30px;
-}
-.tamas-ba-ma2 input, .tamas-ba-ma2 label, .tamas-ba-ma2 textarea {
-    width: 100%;
-}
-.tamas-ba-ma1 i {
-    font-size: 28px;
-    padding-left: 11px;
-    color: orange;
-}
-.tamas-ba-ma2 input.wpcf7-form-control.wpcf7-submit {
-    width: 100%;
 }
